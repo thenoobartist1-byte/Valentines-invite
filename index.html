@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Invite</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffcccb;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #d5006d;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .yes {
+            background-color: #4caf50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Be My Valentine?</h1>
+    <button class="yes" onclick="respond('yes')">Yes</button>
+    <button class="no" onclick="respond('no')">No</button>
+
+    <script>
+        function respond(answer) {
+            if(answer === 'yes') {
+                alert('Yay! I am so excited to be your Valentine! ❤️');
+            } else {
+                alert('That’s okay! Maybe next time. 💔');
+            }
+        }
+    </script>
+</body>
+</html>
