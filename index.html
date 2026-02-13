@@ -1,16 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Valentine's Invite</title>
-    <script>
-        function noButtonClicked() {
-            document.getElementById('meme').style.display = 'block';
-        }
-    </script>
-</head>
-<body>
-    <h1>Will you be my Valentine?</h1>
-    <button onclick="noButtonClicked()">No</button>
-    <img id="meme" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500" alt="Happy person at restaurant" style="display:none;">
-</body>
-</html>
+<!DOCTYPE html>\n<html>\n<head>\n    <title>Valentine's Invite</title>\n</head>\n<body>\n    <h1>Will you be my Valentine?</h1>\n    <button id='yes-button'>Yes</button>\n    <button id='no-button'>No</button>\n    <img id='meme' src='https://i.imgflip.com/3i5xx8.jpg' alt='I am dead inside meme' style='display:none;'>\n    <script>\n        document.getElementById('no-button').onclick = function() {\n            document.getElementById('meme').style.display = 'block';\n        };\n    <\/script>\n</body>\n</html>
